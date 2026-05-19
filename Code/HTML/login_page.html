@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../CSS/login_page.css">
+</head>
+<body>
+    
+    <div class="login_container">
+
+        <div class="login_header">
+            <box-icon size="md" name='tennis-ball' color='#2563eb' ></box-icon>
+            <h1>Login</h1>
+        </div>
+
+        <br>
+        <p>Fields marked wih * are required</p>
+
+        <form action="../PHP/login.php" method="POST" class="loginForm">
+            
+            <div class="input_container">
+                <p class="email_header">Email: *</p>
+                <input id="email" name="email" placeholder="Enter your email" type="email" class="form_input" required>
+            </div>
+
+            <div class="input_container">
+                <p class="password_header">Password: *</p>
+                <input id="password" name="password" placeholder="Enter your password" type="password" class="form_input" required>
+            </div>
+
+            <div class="login_button_container">
+                <button type="submit" class="login_button" name="login">Log in</button>
+            </div>
+            
+            <div class="sign_up_container">
+                <a href="../HTML/signup_page.html" class="sign_up_link">Don't have an account?<span class="sign_up_link_span">Sign up</span></a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="../JavaScript/login_page.js"></script>
+</body>
+</html>

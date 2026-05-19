@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="../CSS/signUp_page.css">
+</head>
+<body>
+    
+    <div class="SignUp_container">
+
+        <div class="SignUp_header">
+            <box-icon size="md" name='tennis-ball' color='#2563eb' ></box-icon>
+            <h1>Sign Up</h1>
+        </div>
+
+        <br>
+        <p>Fields marked wih * are required</p>
+
+        <form action="../PHP/register.php" method="POST" class="signUpForm" id="signUpForm">
+            
+            <div class="input_container">
+                <label for="email">Email: *</label>
+                <input 
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    type="email"
+                    class="form_input"
+                    required>
+            </div>
+
+            <div class="input_container">
+                <label for="password">Password: *</label>
+                <input 
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    type="password"
+                    class="form_input"
+                    required>
+            </div>
+
+            <div class="input_container">
+                <label for="fullName">Full Name: *</label>
+                <input 
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    type="text"
+                    class="form_input"
+                    required>
+            </div>
+
+            <div class="input_container">
+                <label for="phoneNumber">Contact number: *</label>
+                <input 
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter your contact number"
+                    type="tel"
+                    class="form_input"
+                    maxlength="11"
+                    pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$" 
+                    title="Enter a valid UK phone number" 
+                    required>
+            </div>
+
+            <div class="SignUp_button_container">
+                <button type="submit" class="SignUp_button" name="signup">Sign Up</button>
+            </div>
+            
+            <div class="sign_up_container">
+                <a href="../HTML/login_page.html" class="sign_up_link">Already have an account?<span class="sign_up_link_span">Log in</span></a>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
