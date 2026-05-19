@@ -1,0 +1,221 @@
+body,
+html {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #0E407D;
+    padding: 0 15px;
+}
+
+.navbar .logo-slogan {
+    width: 30%;
+}
+
+.navbar .logo-slogan img {
+    width: 100%;
+    height: 60px;
+    aspect-ratio: 16/9;
+    padding-top: 40px;
+}
+
+.navbar .logo-slogan h1 {
+    color: white;
+    margin-left: 9%;
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.navbar .search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .search-container input {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5rem;
+    width: 52vw;
+}
+
+.navbar .search-container i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #0E407D;
+}
+
+.navbar .search-button {
+    position: absolute;
+    right: 16rem;
+    top: 2.9rem;
+    border: none;
+    background-color: transparent;
+}
+
+.navbar .navbar-links {
+    display: flex;
+    gap: 10px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.navbar .navbar-links .fa {
+    color: white;
+    font-size: 30px;
+}
+
+.profile-button {
+    border-style: none;
+    background-color: transparent;
+}
+
+.profile-button a {
+    color: white;
+    font-size: 30px;
+}
+
+.profile-menu {
+    position: relative;
+}
+
+.menu-content {
+    display: none;
+    background-color: white;
+    position: absolute;
+    transform: translateX(-20%);
+    border-radius: 10px;
+    width: 100px;
+}
+
+.menu-content a {
+    display: inline-flex;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.profile-menu:hover .menu-content {
+    display: block;
+}
+
+.sports-bar {
+    background-color: #0E407D;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sports-bar .sports .fa {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.sports-bar .sports .fa-regular {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.sports-bar .sports a {
+    padding: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 25%;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    aspect-ratio: 21/9;
+    object-fit: cover;
+}
+
+.about-section {
+    padding: 60px 80px;
+    background-color: #f7f9fc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #0E407D;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 26px;
+    color: #0E407D;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+    background-color: #0E407D;
+    padding: 20px 50px;
+}
+
+.footer-column h2 {
+    color: white;
+    padding-left: 10px;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    display: block;
+    color: white;
+    padding-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-column .fa-solid {
+    padding-right: 10px;
+}
+
+.footer-column .fa-brands {
+    padding-right: 10px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    text-align: center;
+    grid-column: 1 / span 4;
+    color: white;
+    font-size: 20px;
+}
